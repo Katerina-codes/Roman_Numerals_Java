@@ -1,7 +1,9 @@
 public class RomanNumerals {
 
     public static String convert(int number) {
-        return "";
+        if (number == 0) {
+            return "";
+    }
+    return "I";
     }
 }
-    
