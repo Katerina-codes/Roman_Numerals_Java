@@ -3,6 +3,9 @@ public class RomanNumerals {
     if (number == 0) {
       return "";
     }
-    return "I";
+    else if (number == 1) {
+      return "I";
+    }
+      return "II";
   }
 }
