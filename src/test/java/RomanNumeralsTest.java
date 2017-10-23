@@ -4,13 +4,13 @@ import static org.junit.Assert.assertEquals;
 
 public class RomanNumeralsTest {
 
-    @Test
-    public void convertsZero() {
-        assertEquals("", RomanNumerals.convert(0));
-    }
+  @Test
+  public void convertsZero() {
+    assertEquals("", RomanNumerals.convert(0));
+  }
 
-    @Test
-    public void convertsOne() {
-        assertEquals("I", RomanNumerals.convert(1));
-    }
+  @Test
+  public void convertsOne() {
+    assertEquals("I", RomanNumerals.convert(1));
+  }
 }
