@@ -2,20 +2,24 @@ public class RomanNumerals {
 
   public static String convert(int number) {
     String roman = "";
+    int[] arabic_numbers = {10};
+    String[] roman_numerals = {"X"};
 
-    while (number >= 10) {
-      number -= 10;
-      roman += "X";
+    for (int i = 0; i < arabic_numbers.length; i++ ) {
+      while (number >= arabic_numbers[i]) {
+        number -= arabic_numbers[i];
+        roman += roman_numerals[i];
+      }
     }
-    if (number >= 5) {
+    while (number >= 5) {
       number -= 5;
       roman += "V";
     }
 
-    for (int i = 0; i < number; i++) {
+    while (number < 4 && number > 0) {
+      number -= 1;
       roman += "I";
     }
-
     return roman;
   }
 }
