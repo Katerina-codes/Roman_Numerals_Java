@@ -10,6 +10,9 @@ public class RomanNumerals {
     else if (number == 6) {
       return "VI";
     }
+    else if (number == 7) {
+      return "VII";
+    }
     for (int i = 0; i < number; i++) {
       roman += "I";
     }
