@@ -40,6 +40,11 @@ public class RomanNumeralsTest {
   }
 
   @Test
+  public void convertsNine() {
+    assertEquals("IX", RomanNumerals.convert(9));
+  }
+
+  @Test
   public void convertsTen() {
     assertEquals("X", RomanNumerals.convert(10));
   }
