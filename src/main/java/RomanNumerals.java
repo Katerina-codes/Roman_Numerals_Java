@@ -1,21 +1,16 @@
 public class RomanNumerals {
+
   public static String convert(int number) {
-      String roman = "";
-    if (number == 0) {
-      return "";
+    String roman = "";
+
+    if (number >= 5) {
+      number -= 5;
+      roman += "V";
     }
-    else if (number == 5) {
-      return "V";
-    }
-    else if (number == 6) {
-      return "VI";
-    }
-    else if (number == 7) {
-      return "VII";
-    }
+
     for (int i = 0; i < number; i++) {
       roman += "I";
     }
-      return roman;
+    return roman;
   }
 }

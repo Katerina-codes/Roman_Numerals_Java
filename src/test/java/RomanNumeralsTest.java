@@ -30,7 +30,7 @@ public class RomanNumeralsTest {
   }
 
   @Test
-  public void convertsSevem() {
+  public void convertsSeven() {
     assertEquals("VII", RomanNumerals.convert(7));
   }
 }
